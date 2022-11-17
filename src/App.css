@@ -1,0 +1,47 @@
+body{
+  background-color: #f5f6fa;
+}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+  .app{
+    flex-direction: column;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
